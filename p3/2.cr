@@ -25,11 +25,10 @@ until value > input
             values.fetch({x, y - 1}, 0) +
             values.fetch({x + 1, y - 1}, 0)
     values[{x, y}] = value
-    puts value
     break if value > input
   end
   direction = (direction + 1) % directions.size
   movement += 1
 end
 
-# puts value
+puts value
